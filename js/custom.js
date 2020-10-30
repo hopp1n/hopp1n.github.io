@@ -163,6 +163,48 @@ $('document').ready(function () {
             $('[data-js-store="active-screen-number"]').text('0' + index);
         }
     });
+
+    //spoiler in hamburger - mobile
+
+        function windowSize(){
+            if ($(window).width() <= '1300'){
+
+                $('.hamburger-menu_list-title').addClass('spoiler');
+                $('.hamburger-menu-bottom').children().removeClass('spoiler');
+
+                $('.hamburger-menu_list-title').click(function(event) {  
+
+                 if ($(this).parent()[0] != $('.hamburger-menu-bottom')[0] ) {
+                    $(this).toggleClass('active').nextAll().slideToggle(300);
+                 }        
+                });
+                
+            } else {
+                $('.hamburger-menu_list-title').removeClass('spoiler');
+               
+            }
+            if ($(window).width() <= '1200') {
+               
+                $('.hamburger-menu_list-title').click(function (e) {
+                    if ($(this).parent()[0] != $('.hamburger-menu-bottom')[0]) {
+                        if ($('.hamburger-menu_list').hasClass('one')) {
+                            $('.hamburger-menu_list-title').not($(this)).removeClass('active');
+                            $('.hamburger-menu_list-title').not($(this)).not($('.hamburger-menu-bottom').children()).nextAll().slideUp(300);
+                        } 
+                    } else {
+                        $('.hamburger--slider').removeClass('is-active');
+                        
+                    }
+                    
+                });
+            }
+            
+        }
+
+        $(window).on('load resize',windowSize);
+
+   
+    
 });
 
 function resetWow() {
