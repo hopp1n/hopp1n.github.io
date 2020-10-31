@@ -901,10 +901,16 @@ button:hover {
   }
   
 }
-@media (max-width: 410px)  {
+@media (max-width: 440px)  {
   .configurator__wrap {
     padding: 20px!important;
     text-align: center;
+  }
+  .contacts__wrap {
+    text-align: center;
+  }
+  .contacts__faq {
+    text-align: center!important;
   }
   .about__desc {
     font-size: 18px!important;
