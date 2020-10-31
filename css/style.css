@@ -2442,7 +2442,7 @@ button:hover {
   .services__name {
     font-size: 100px;
     line-height: 1;
-    bottom: -20px;
+    bottom: 10px;
   }
 }
 @media (max-width: 380px) {
