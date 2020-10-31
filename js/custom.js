@@ -51,7 +51,7 @@ $('document').ready(function () {
         var service = $('.services__item');
         service.on('click', function () {
             var _this = this;
-
+            $('.services__item-content').addClass('active');
             service.removeClass('services__item_active');
             $(this).addClass('services__item_active');
             $('.services__item-text', $(this)).addClass('no-animation').removeClass('aos-animate');
@@ -69,6 +69,7 @@ $('document').ready(function () {
         $('.services__close-btn').on('click', function (e) {
             e.stopPropagation();
             service.removeClass('services__item_mobile-active');
+            $('.services__item-content').removeClass('active');
         });
     })();
 
@@ -198,11 +199,19 @@ $('document').ready(function () {
                     
                 });
             }
+
+            if ($(window).width() <= '480') {
+                $('.about__decor-element').removeClass('layer');
+                $('.about__name').removeClass('layer');
+                $('.services__name').removeClass('layer');
+                $('.configurator__name').removeClass('layer');
+                $('.contacts__name').removeClass('layer');
+            }
             
         }
 
-        $(window).on('load resize',windowSize);
-
+        $(window).on('load',windowSize);
+       
    
     
 });
