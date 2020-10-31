@@ -906,12 +906,7 @@ button:hover {
     padding: 20px!important;
     text-align: center;
   }
-  .contacts__wrap {
-    text-align: center;
-  }
-  .contacts__faq {
-    text-align: center!important;
-  }
+
   .about__desc {
     font-size: 18px!important;
   }
@@ -2005,11 +2000,11 @@ button:hover {
     right: 0;
   }
 }
-@media (max-width: 374px) {
+/* @media (max-width: 374px) {
   .about__name {
     font-size: 90px;
   }
-}
+} */
 .services {
   background: url(../img/about-dark-bg.jpg) center/cover;
 }

@@ -132,9 +132,9 @@ $('document').ready(function () {
         onLeave: function onLeave(prev, next) {
             var index = +next.index + 1,
                 blackIndexes = [2, 4, 6];
-            /*if($(window).outerWidth() >= 1300 && $(window).outerHeight() >= 700) {
+            if($(window).outerWidth() >= 1300 && $(window).outerHeight() >= 700) {
                 $('.aos-animate').removeClass('aos-animate');
-            }*/
+            }
             $('.cursor').css('opacity', 0);
 
             setTimeout(function () {
