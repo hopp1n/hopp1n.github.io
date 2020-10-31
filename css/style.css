@@ -1974,31 +1974,66 @@ button:hover {
   text-transform: uppercase;
   font-weight: bold;
   color: #e0e0e0;
-  font-size: 488px;
+  font-size: 388px;
   line-height: 370px;
+}
+.about__name1 {
+  bottom: -102.5%;
+}
+.about__name2 {
+  bottom: -202.5%;
+  color: #4e4e4e
+}
+.about__name3 {
+  bottom: -302.5%;
 }
 @media (max-width: 1470px) {
   .about__name {
-    font-size: 400px;
+    font-size: 300px;
+  }
+  .about__name1 {
+    bottom: -106.5%;
+  }
+  .about__name2 {
+    bottom: -206.5%;
+    color: #4e4e4e
+  }
+  .about__name3 {
+    bottom: -306.5%;
   }
 }
 @media (max-width: 1199px) {
   .about__name {
-    font-size: 300px;
+    font-size: 200px;
+  }
+  .about__name1 {
+    bottom: -109.5%;
+  }
+  .about__name2 {
+    bottom: -209.5%;
+    color: #4e4e4e
+  }
+  .about__name3 {
+    bottom: -309.5%;
   }
 }
 @media (max-width: 880px) {
   .about__name {
-    font-size: 240px;
+    font-size: 140px;
+  }
+  .about__name1 {
+    bottom: -112.5%;
+  }
+  .about__name2 {
+    bottom: -212.5%;
+    color: #4e4e4e
+  }
+  .about__name3 {
+    bottom: -312.5%;
   }
 }
 @media (max-width: 705px) {
-  .about__name {
-    font-size: 120px;
-    line-height: 1;
-    bottom: -30px;
-    right: 0;
-  }
+  
 }
 /* @media (max-width: 374px) {
   .about__name {
@@ -2288,6 +2323,7 @@ button:hover {
   right: -240px;
   bottom: 0;
 }
+
 @media (max-height: 960px) {
   .services__item-decor_pea {
     right: 0;
@@ -2442,7 +2478,7 @@ button:hover {
   .services__name {
     font-size: 100px;
     line-height: 1;
-    bottom: 10px;
+    bottom: -20px;
   }
 }
 @media (max-width: 380px) {

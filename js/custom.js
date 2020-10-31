@@ -46,7 +46,7 @@ $('document').ready(function () {
             
         });
     })();
-
+    
     (function () {
         var service = $('.services__item');
         service.on('click', function () {
@@ -85,7 +85,7 @@ $('document').ready(function () {
         });
     })();
 
-    $('body').on('click', function () {});
+ 
 
     var scene = document.querySelector('body');
     new Parallax(scene, {
@@ -127,7 +127,7 @@ $('document').ready(function () {
 
     $('#fullpage').fullpage({
         scrollBar: true,
-        fixedElements: '.slide-ctrl, .cursor, .header, .main-menu',
+        fixedElements: '.slide-ctrl, .cursor, .header, .main-menu, .about__name',
         responsiveHeight: 580,
         onLeave: function onLeave(prev, next) {
             var index = +next.index + 1,
@@ -164,7 +164,7 @@ $('document').ready(function () {
             $('[data-js-store="active-screen-number"]').text('0' + index);
         }
     });
-
+   
     //spoiler in hamburger - mobile
 
         function windowSize(){
@@ -206,6 +206,7 @@ $('document').ready(function () {
                 $('.services__name').removeClass('layer');
                 $('.configurator__name').removeClass('layer');
                 $('.contacts__name').removeClass('layer');
+                
             }
             
         }
