@@ -754,7 +754,7 @@ button:hover {
     display: none;
   }
   .header {
-    position: fixed;
+    position: fixed!important;
   }
   .header__logo_black.isnt-active {
     display: none;
@@ -865,19 +865,19 @@ button:hover {
     bottom: -10px!important;
   }
   .about__name.prev {
-    bottom: 25px!important;
+    bottom: 20px!important;
   }
   .contacts__name  {
     right: 2px!important;
   }
   .contacts__name.prev  {
-    bottom: -116px!important;
+    bottom: -92px!important;
   }
   .services__name.prev {
-    bottom: -5px!important;
+    bottom: 20px!important;
   }
   .configurator__name.prev {
-    bottom: -5px!important;
+    bottom: 20px!important;
   }
   .about__light .about__decor-element{
     bottom: 40px!important;
