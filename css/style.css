@@ -841,8 +841,25 @@ button:hover {
   .services__item-content.active {
     display: block;
   }
- 
+  .services__item-name {
+    text-decoration: none!important;
+    font-size: 22px!important;
+  }
+  .services__name  {
+    bottom: -10px!important;
+    right: -2px!important;
+  }
+  .about__name  {
+    bottom: -10px!important;
+  }
+  .contacts__name  {
+    right: 2px!important;
+  }
+  .about__light .about__decor-element{
+    bottom: 40px!important;
+  }
 }
+
 @media (max-width: 1199px) {
   .header {
     height: 80px;
@@ -856,7 +873,7 @@ button:hover {
 }
 @media (max-height: 736px) {
   .about__name  {
-    bottom: 0px!important;
+    /* bottom: 0px!important; */
   }
 }
 @media (max-height: 670px) {
@@ -864,7 +881,7 @@ button:hover {
     margin-right: 39vw!important;
   }
   .about__name  {
-    bottom: -12px!important;
+    /* bottom: -12px!important; */
   }
 }
 @media (max-width: 490px) {
@@ -946,12 +963,12 @@ button:hover {
 }
 @media (max-width: 320px)  {
   .about__name {
-    bottom: -1px!important;
+    /* bottom: -1px!important; */
   }
 }
 @media (max-width: 290px)  {
   .about__name {
-    bottom: 29px!important;
+    /* bottom: 29px!important; */
   }
 }
 .header_black-bg {
@@ -1974,72 +1991,38 @@ button:hover {
   text-transform: uppercase;
   font-weight: bold;
   color: #e0e0e0;
-  font-size: 388px;
+  font-size: 488px;
   line-height: 370px;
 }
-.about__name1 {
-  bottom: -102.5%;
-}
-.about__name2 {
-  bottom: -202.5%;
-  color: #4e4e4e
-}
-.about__name3 {
-  bottom: -302.5%;
-}
+
 @media (max-width: 1470px) {
   .about__name {
     font-size: 300px;
-  }
-  .about__name1 {
-    bottom: -106.5%;
-  }
-  .about__name2 {
-    bottom: -206.5%;
-    color: #4e4e4e
-  }
-  .about__name3 {
-    bottom: -306.5%;
   }
 }
 @media (max-width: 1199px) {
   .about__name {
     font-size: 200px;
   }
-  .about__name1 {
-    bottom: -109.5%;
-  }
-  .about__name2 {
-    bottom: -209.5%;
-    color: #4e4e4e
-  }
-  .about__name3 {
-    bottom: -309.5%;
-  }
 }
 @media (max-width: 880px) {
   .about__name {
-    font-size: 140px;
-  }
-  .about__name1 {
-    bottom: -112.5%;
-  }
-  .about__name2 {
-    bottom: -212.5%;
-    color: #4e4e4e
-  }
-  .about__name3 {
-    bottom: -312.5%;
+    font-size: 240px;
   }
 }
 @media (max-width: 705px) {
-  
+  .about__name {
+    font-size: 120px;
+    line-height: 1;
+    bottom: -30px;
+    right: 0;
+  }
 }
-/* @media (max-width: 374px) {
+@media (max-width: 374px) {
   .about__name {
     font-size: 90px;
   }
-} */
+}
 .services {
   background: url(../img/about-dark-bg.jpg) center/cover;
 }
@@ -2480,9 +2463,20 @@ button:hover {
     line-height: 1;
     bottom: -20px;
   }
+  .about__name {
+    font-size: 100px;
+    line-height: 1;
+    bottom: -20px;
+  }
+  .cursor {
+    display: none;
+  }
 }
 @media (max-width: 380px) {
   .services__name {
+    font-size: 80px;
+  }
+  .about__name {
     font-size: 80px;
   }
 }
@@ -2559,6 +2553,9 @@ button:hover {
   background: transparent;
   margin-top: 50px;
   margin-left: 10px;
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  appearance: none;
 }
 @media (max-width: 990px) {
   .configurator__create-project {
@@ -2591,7 +2588,7 @@ button:hover {
 .configurator__circle {
   position: absolute;
   bottom: 20px;
-  right: 200px;
+  right: 150px;
   width: 730px;
   height: 730px;
   -webkit-border-radius: 50%;
@@ -2606,7 +2603,7 @@ button:hover {
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
     transform: scale(0.9);
-    right: 50px;
+    right: 200px;
   }
 }
 @media (max-height: 860px), (max-width: 1250px) {
@@ -2614,16 +2611,22 @@ button:hover {
     -webkit-transform: scale(0.8);
     -ms-transform: scale(0.8);
     transform: scale(0.8);
-    right: -50px;
+    right: 105px;
   }
 }
-@media (max-height: 800px), (max-width: 1040px) {
+@media (max-height: 800px), (max-width: 1200px) {
   .configurator__circle {
     -webkit-transform: scale(0.6);
     -ms-transform: scale(0.6);
     transform: scale(0.6);
-    right: -120px;
+    right: 25px;
   }
+}
+@media (max-height: 800px), (max-width: 1000px) {
+  .configurator__circle {
+    right: -25px;
+  }
+
 }
 @media (max-height: 700px), (max-width: 880px) {
   .configurator__circle {
@@ -2854,7 +2857,7 @@ button:hover {
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
     transform: scale(0.9);
-    right: -35px;
+    right: 32px;
     bottom: -100px;
   }
 }
@@ -2863,16 +2866,21 @@ button:hover {
     -webkit-transform: scale(0.8);
     -ms-transform: scale(0.8);
     transform: scale(0.8);
-    right: -135px;
+    right: -30px;
   }
 }
-@media (max-height: 800px), (max-width: 1040px) {
+@media (max-height: 800px), (max-width: 1200px) {
   .configurator__cheasecake {
     -webkit-transform: scale(0.8);
     -ms-transform: scale(0.8);
     transform: scale(0.8);
     bottom: -80px;
-    right: -205px;
+    right: -110px;
+  }
+}
+@media (max-height: 800px), (max-width: 1000px) {
+  .configurator__cheasecake {
+    right: -160px;
   }
 }
 @media (max-height: 700px), (max-width: 880px) {

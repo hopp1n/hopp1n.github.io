@@ -127,7 +127,7 @@ $('document').ready(function () {
 
     $('#fullpage').fullpage({
         scrollBar: true,
-        fixedElements: '.slide-ctrl, .cursor, .header, .main-menu, .about__name',
+        fixedElements: '.slide-ctrl, .cursor, .header, .main-menu',
         responsiveHeight: 580,
         onLeave: function onLeave(prev, next) {
             var index = +next.index + 1,
@@ -223,6 +223,12 @@ function resetWow() {
 
         $(item).removeClass('animated').removeAttr('style');
     });
-
-    new WOW().init();
 }
+
+var wow = new wow(
+    {
+        mobile: false
+    }
+);
+
+wow.init();
