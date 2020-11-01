@@ -753,6 +753,18 @@ button:hover {
   br {
     display: none;
   }
+  .header {
+    position: fixed;
+  }
+  .header__logo_black.isnt-active {
+    display: none;
+  }
+  .icon-cart.isnt-active  {
+    fill: #fff!important;
+  }
+  .icon-search.isnt-active  {
+    fill: #fff!important;
+  }
 }
 @media (max-width: 1100px) {
   
@@ -852,39 +864,24 @@ button:hover {
   .about__name  {
     bottom: -10px!important;
   }
+  .about__name.prev {
+    bottom: 25px!important;
+  }
   .contacts__name  {
     right: 2px!important;
+  }
+  .contacts__name.prev  {
+    bottom: -90px!important;
+  }
+  .services__name.prev {
+    bottom: 25px!important;
+  }
+  .configurator__name.prev {
+    bottom: 25px!important;
   }
   .about__light .about__decor-element{
     bottom: 40px!important;
   }
-}
-
-@media (max-width: 1199px) {
-  .header {
-    height: 80px;
-    background: #272727;
-  }
-}
-@media (max-width: 990px) {
-  .header {
-    height: 60px;
-  }
-}
-@media (max-height: 736px) {
-  .about__name  {
-    /* bottom: 0px!important; */
-  }
-}
-@media (max-height: 670px) {
-  .hamburger-menu-bottom a:first-child {
-    margin-right: 39vw!important;
-  }
-  .about__name  {
-    /* bottom: -12px!important; */
-  }
-}
-@media (max-width: 490px) {
   .header {
     height: 50px;
   }
@@ -916,12 +913,35 @@ button:hover {
     padding: 0;
     margin: 0;
   }
-  
 }
+
+@media (max-width: 1199px) {
+  .header {
+    height: 80px;
+    background: #272727;
+  }
+}
+@media (max-width: 990px) {
+  .header {
+    height: 60px;
+  }
+}
+@media (max-height: 736px) {
+  .about__name  {
+    /* bottom: 0px!important; */
+  }
+}
+@media (max-height: 670px) {
+  .hamburger-menu-bottom a:first-child {
+    margin-right: 39vw!important;
+  }
+}
+
 @media (max-width: 440px)  {
   .configurator__wrap {
     padding: 20px!important;
     text-align: center;
+    padding-top: 200px!important;
   }
 
   .about__desc {
@@ -929,6 +949,12 @@ button:hover {
   }
   .contacts__address-ltd br {
     display: block;
+  }
+  .services__wrap {
+    justify-content: center;
+  }
+  .services__item_mobile-active {
+    padding-top: 100px!important;
   }
 
 }
@@ -2502,7 +2528,7 @@ button:hover {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    padding-top: 50px;
+    padding-top: 200px;
   }
 }
 .configurator__title {
