@@ -871,13 +871,13 @@ button:hover {
     right: 2px!important;
   }
   .contacts__name.prev  {
-    bottom: -90px!important;
+    bottom: -116px!important;
   }
   .services__name.prev {
-    bottom: 25px!important;
+    bottom: -5px!important;
   }
   .configurator__name.prev {
-    bottom: 25px!important;
+    bottom: -5px!important;
   }
   .about__light .about__decor-element{
     bottom: 40px!important;

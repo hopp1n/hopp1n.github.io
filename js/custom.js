@@ -163,7 +163,7 @@ $('document').ready(function () {
                 $('.header').removeClass('header_black-bg');
             }
             $('[data-js-store="active-screen-number"]').text('0' + index);
-            if ($(window).width() <= '490') {}
+            if ($(window).width() <= '490') {
                 if (prev.index < next.index) {
                     $('.about__name').addClass('prev');
                     $('.services__name').addClass('prev');
@@ -175,6 +175,8 @@ $('document').ready(function () {
                     $('.configurator__name').removeClass('prev');
                     $('.contacts__name').removeClass('prev');
                 }
+            }
+                
         }
       
     });
